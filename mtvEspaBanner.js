@@ -19,16 +19,18 @@ function mtv_espa_banner(options) {
     if (Options.img_url == '') {
         return true;
     }
+    mtv_espa_print_css(Options);
     var img = '<img src="' + Options.img_url + '" alt="mtv-espa-image" style="' + Options.img_css + '"/>';
     if (Options.img_href != '') {
         img = '<a href="' + Options.img_href + '" target="_blank">' + img + '</a>';
     }
     var html = '<div id="mtv-espa-wrapper" style="' + Options.main_div_css + '"><div class="mtv-espa-image" style="' + Options.wrapper_css + '">' + img + '</div></div>';
     document.body.innerHTML += html;
+
 }
 
 
-function print_css(Options) {
+function mtv_espa_print_css(Options) {
     var position_style = 'bottom:0px;'
     if (Options.position == 'top') {
         position_style = 'top:0px;';
