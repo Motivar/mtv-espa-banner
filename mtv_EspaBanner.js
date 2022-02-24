@@ -47,15 +47,20 @@ function mtv_espa_print_css(Options) {
     background: white;
     border-top: solid 2px;
     height: ${Options.height};
-    .mtv-espa-image {
+    }
+    #mtv-espa-wrapper .mtv-espa-image {
         width: 95%;
         margin: 0 auto;
         max-width: ${Options.img_max_width};
-        img {
-            width: 100%;
-        }
+        height:100%:
     }
-}`.trim();
+     #mtv-espa-wrapper .mtv-espa-image   img {
+            width: 100%;
+            min-width:100px;
+            height:100%;
+    }
+    
+`.trim();
 
     var styleSheet = document.createElement("style")
     styleSheet.type = "text/css";
