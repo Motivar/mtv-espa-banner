@@ -29,7 +29,6 @@ function mtv_espa_banner(options) {
 
 }
 
-
 function mtv_espa_print_css(Options) {
     var position_style = 'bottom:0px;'
     if (Options.position == 'top') {
