@@ -1,15 +1,16 @@
 function mtv_espa_banner(options) {
     var defaults = {
-        position: 'bottom',
-        padding: '5px',
-        height: '60px',
-        img_max_width: '320px',
-        img_url: '',
-        z_index: 999999999,
-        img_href: '',
-        main_div_css: '',
-        wrapper_css: '',
-        img_css: '',
+        //values below are default you can overwrite them
+        position: 'bottom', //either top or bottom, default is bottom
+        padding: '5px', //the default padding of the main wrapper
+        height: '60px', // the default height of the main wrapper
+        img_max_width: '320px', //max width for image inside
+        img_url: '', //the src of img. if you don't fill something none html will appear
+        z_index: 999999999, // the z-index of the wrapper-div
+        img_href: '', // the href to use as destination on click image. if you don't put something the image will display with none actions
+        main_div_css: '', // plain css for the wrapper div
+        wrapper_css: '', // plain css for wrapper div of image
+        img_css: '', // plain css for the img
     };
 
     const Options = {
